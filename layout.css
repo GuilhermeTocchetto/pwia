@@ -1,0 +1,35 @@
+body, html{
+    margin:0;
+    padding:0;
+    background-color: darkgray;
+    height: 100%;
+}
+.container{
+    width: 80%;
+    background-color: #ffffff;
+    margin: 0 auto;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 250px auto 100px;
+    grid-template-areas: "header header"
+                         "main sidebar"
+                         "footer footer";
+}
+header{
+    background-color: aquamarine;
+    grid-area: header;
+}
+main{
+    background-color: bisque;
+    grid-area: main;
+    display: ;
+}
+aside{
+    background-color: cadetblue;
+    grid-area: sidebar;
+}
+footer{
+    background-color: blue;
+    grid-area: footer;
+}

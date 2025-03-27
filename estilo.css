@@ -12,6 +12,7 @@ background-color: #dbdbdb;
     width: 264px;
     height: 440px;
     background-color: #ffe1f5;
+    margin: 10px 15px;
 }
 .img-card {
     width: 264px;
@@ -55,9 +56,11 @@ background-color: #dbdbdb;
     border: 1px solid;
     display:flex;
 }
-.item-menu{
+.item-menu :hover{
     list-style: none;
     padding: 10px 20px;
+    width: 500px;
+    text-align:center;
 }
 .item-menu:hover{
     background-color: #f3e6f1;
