@@ -23,7 +23,6 @@ header{
 main{
     background-color: bisque;
     grid-area: main;
-    display: ;
 }
 aside{
     background-color: cadetblue;
