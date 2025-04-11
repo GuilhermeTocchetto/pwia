@@ -5,18 +5,19 @@ div {
 html, body{
 margin: 0;
 padding: 0;
-background-color: #dbdbdb;
+background-color: #ccdcf8;
 }
 .card{
     width: 264px;
-    height: 440px;
-    background-color: #f8e4f1;
-    margin: 25px 40px;
+    height: 475px;
+    background-color: #ffffff;
+    margin: 45px 55px;
     border-radius: 9px;
+
 }
 .img-card{
     width: 264px;
-    height: 168px;
+    height: 200px;
     color: #000000;
     margin-top: 25px;
 }
@@ -27,6 +28,7 @@ background-color: #dbdbdb;
     padding: 10px 5px;
     margin-bottom: 50px;
     color: #000000;
+    height: 70px;
 }
 .preco{
     font-size: 20px;
@@ -42,8 +44,8 @@ background-color: #dbdbdb;
     padding: 10px 5px;
 }
 .botao-card{
-    background-color: #a871a0;
-    color: #e79bc8;
+    background-color: #b93952;
+    color: #ececec;
     font-weight: bold;
     width: 100%;
     height: 50px;
@@ -53,8 +55,8 @@ background-color: #dbdbdb;
     border-radius: 9px;
 }
 .menu{
-    background-color: #fcc3ed;
-    color: #dbdbdb;
+    background-color: #4e4ed6;
+    color: #5557e9;
     border: 1px solid;
     display:flex;
 }
@@ -64,18 +66,20 @@ background-color: #dbdbdb;
     width: 500px;
     text-align:center;
     font-size: 25px;
+    color: #000000;
 }
 .item-menu:hover{
-    background-color: #f3e6f1;
+    background-color: #a9aff5;
 }
 .link-menu{
     text-decoration: none;
-    color: #563d58c9;
+    color: #070808c9;
     font-weight: bold;
     font-size: 23px;
 }
 .botao-card:hover{
-    background-color: blue;
+    background-color: rgb(238, 132, 141);
+    color: #ffffff;
 }
 .container-card{
     display: flex;
@@ -83,12 +87,12 @@ background-color: #dbdbdb;
     border-radius: 18px;
 }
 .titulo{
-    background-color: #dbdbdb;
+    background-color: #ccdcf8;
     text-align:center;
-    color: #42273e;
+    color: #000000;
 }
-.aneis{
-    color: #42273e;
+.whey{
+    color: #f1f1f1;
     font-size: 20px;
     text-align: center;
 }
