@@ -1,0 +1,15 @@
+<script>
+    var nome = prompt("Digite o seu nome")
+    var peso= Number(prompt('Digite o seu peso'))
+    var altura= Number(prompt('Digite a sua altura'))
+
+    var IMC=peso / (altura*altura)
+
+    if(IMC<18.5){document.write('O paciente "+nome+" esta na classificacao "magreza" no IMC')}
+
+    else if(IMC>=18.5 && IMC<=24.9){document.write('O paciente '+nome+' esta na classificacao "normal" no IMC')}
+    else if(IMC>=25 && IMC<=29.9){document.write('O paciente '+nome+' esta na classificacao "sobrepeso I" no IMC')}
+    else if(IMC>=30 && IMC<=34.9){document.write('O paciente '+nome+' esta na classificacao "Obesidade I" no IMC')}
+    else if(IMC>=35 && IMC<=39.9){document.write('O paciente '+nome+' esta na classificacao "Obesidade II" no IMC')}
+    else {document.write('O paciente '+nome+' esta na classificacao "Obesidade III" no IMC')}
+</script>
