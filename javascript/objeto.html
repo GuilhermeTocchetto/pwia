@@ -1,0 +1,59 @@
+<input type="name" value="" name="num1" id="num1"/>
+<br>
+<input type="name" value="" name="num2" id="num2"/>
+<br>
+<br>
+<button id="botao" onclick="Somar()">+</button>
+<button id="botao" onclick="mult()">X</button>
+<button id="botao" onclick="div()">/</button>
+<button id="botao" onclick="sub()">-</button>
+
+<script>
+    function Somar()
+    {
+        var num1 = document.getElementById("num1")
+        var num2 = document.getElementById("num2")
+        alert(Number(num1.value) + Number(num2.value))
+
+    }
+    function mult()
+    {
+        var num1 = document.getElementById("num1")
+        var num2 = document.getElementById("num2")
+        alert(Number(num1.value) * Number(num2.value))
+    }
+    function div()
+    {
+        var num1 = document.getElementById("num1")
+        var num2 = document.getElementById("num2")
+        alert(Number(num1.value) / Number(num2.value))
+    }
+    function sub()
+    {
+        var num1 = document.getElementById("num1")
+        var num2 = document.getElementById("num2")
+        alert(Number(num1.value) - Number(num2.value))
+    }
+
+
+    function TrocarTexto()
+    {
+        var entrada =document.getElementById("entrada")
+        console.log(entrada)
+        entrada.value ="feliz"
+        var botao = document.getElementById("botao")
+
+        if
+        (botao.style.backgroundColor == "red")
+        {
+        botao.style.backgroundColor = "blue"
+        
+        }
+        else
+        {
+            botao.style.backgroundColor = "red"
+            
+        }
+
+    }
+</script>
