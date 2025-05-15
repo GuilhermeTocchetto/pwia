@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>endereço</title>
+</head>
+<body>
+    <form onsubmit="return ValidarFormulario()" action="salvar.html" method="post">
+
+            <label>Cep</label>
+            <input onkeydown="ValidarTexto()" type="text" name="cep" id="cep" class="campo"/><br><br>
+
+            <label for="">endereço</label>
+            <input type="text" name="endereco" id="endereco" class="campo"/><br><br>
+
+            <label for="">Número</label>
+            <input type="text" name="Numero" id="Numero" class="campo"/><br><br>
+
+            <label for="">bairro</label>
+            <input type="text" name="bairro" id="bairro" class="campo"/><br><br>
+
+            <label for="">cidade</label>
+            <input type="text" name="cidade" id="cidade" class="campo"/><br><br>
+
+            <label for="">estado</label>
+            <input type="text" name="estado" id="estado" class="campo"/><br><br>
+
+            <button class="botao" id="botao" type="submit">enviar dados</button>
+    </form>
+    <script>
+        function ValidarFormulario()
+        {
+            var cep = document.getElementById('cep')
+            var endereco = document.getElementById('endereco')
+            var Numero = document.getElementById ('Numero')
+            var bairro = document.getElementById('bairro')
+            var cidade = document.getElementById('cidade')
+            var estado = document.getElementById('estado')
+
+            if(cep.value == "")
+            {
+                alert('campo cep nao esta preenchido')
+                cep.style.border = '2px solid red'
+                return false; //impedir que a ação padrão do navegador ocorra
+            }
+        function ValidarTexto(){
+
+            var cep = document.getElementById('cep')
+            comsole.log( cep.style.border )
+            if(cep.style.border != "")
+            {
+                cep.styler.border =""
+            }
+        }
+
+            
+        }
+    </script>
+</body>
+</html>
