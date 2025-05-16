@@ -39,10 +39,10 @@
             var cidade = document.getElementById('cidade')
             var estado = document.getElementById('estado')
 
-            if(cep.value == "")
+            if(cep.value =="")
             {
-                alert('campo cep nao esta preenchido')
-                cep.style.border = '2px solid red'
+                alert('campo cep nao esta preenchido');
+                cep.style.border = '2px solid red';
                 return false; //impedir que a ação padrão do navegador ocorra
             }
         function ValidarTexto(){
@@ -51,7 +51,7 @@
             comsole.log( cep.style.border )
             if(cep.style.border != "")
             {
-                cep.styler.border =""
+                cep.styler.border ="";
             }
         }
 
