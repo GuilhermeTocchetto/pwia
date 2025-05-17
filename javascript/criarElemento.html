@@ -25,24 +25,29 @@
 
         function CriarElemento()
         {
-                for( var i = 0; i<10; i++)
+                
                 {
                     var cor = document.getElementById('cor')
-                    var digitado = document.getElementById('texto')
+                    var digitado = document.getElementById('textoImnput')
                     var tag = document.getElementById('tag')
                    
-
-                    var novoH1 = document.createElement(digitado.value)  //(  document.createElement()  )para criar um novo elemento HTML dinamicamente via JavaScript
-                    novoH1.style.backgroundColor = cor.value
-                    novoH1.style.color  ='#ffffff'
-                    novoH1.id = 'titulo'
-                    novoH1.classList.add("PrimeiroTexto")
-                    novoH1.innerText = digitado.value
-
+                    
+                     // Verifica se a tag é válida
+            if (tag.value) {
+                                var novoH1 = document.createElement(digitado.value)  //(  document.createElement()  )para criar um novo elemento HTML dinamicamente via JavaScript
+                                novoElemento.style.backgroundColor = cor.value
+                                novoElemento.style.color  ='#ffffff'
+                                novoElemento.id = 'titulo'
+                                novoElemento.classList.add("PrimeiroTexto")
+                                novoElemento.innerText = digitado.value
+                           
                     var div = document.getElementById('caixa')
-                    div.append(novoH1)
+                    div.append(novoElemento) // Adiciona o novo elemento à div "caixa"
 
-                    console.log(novoH1)
+                    console.log(novoElemento)
+                }else{
+                alert("Por favor, insira a tag corretamento/válida.")
+            }
                 }
 
         }
