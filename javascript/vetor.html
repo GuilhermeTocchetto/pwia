@@ -39,7 +39,63 @@
             nomes[Math.floor(Math.random() * 3)]
         ) */
 
+        var nomes = 
+["Tocchetto",
+"Barreto",
+"JM",
+"Gabryel",
+"Nalu",
+"mark",
+"hecthor",
+"Fernando",
+"Luca"
+ ]    
 
+//alert(nomes[numeroAletorio( nomes.length)])
+
+    for(var i = 0; i < nomes.length; i++)
+{
+    document.write("<br>"+ i + ' - ' + nomes[i])
+}
+
+        
+        
+            function numeroAletorio(numeroMaximo)
+            {
+                return Math.floor(Math.random() * numeroMaximo)
+            }
+
+         /*   nomes.reverse(); //inverte a ordem dos elementos
+            nomes.shift(); //remove o primeiro elemento
+            nomes.unshift(0); //adiciona o no começo
+            nomes.pop(); //remove no final
+            nomes.push(0); // adiciona no final     */
+
+
+            function exibirLista(lista)
+            {
+            document.write("<hr>")
+
+            lista.forEach(
+                (valor, indece) => {
+                    document.write("<br> indece: "+indece+" valor é :"+ valor+"<br>")
+                }
+            );
+            document.write("<hr>")
+            }
+
+            exibirLista(nomes)
+            nomes.reverse(); //inverte a ordem dos elementos
+            exibirLista(nomes)
+            nomes.unshift("novo nome no inicio da lista"); //adiciona o no começo
+            exibirLista(nomes)
+            nomes.shift() //remove o primeiro elemento
+            exibirLista(nomes)
+            nomes.push("Joao viado") // adiciona no final
+            exibirLista(nomes)
+            nomes.pop() //remove no final
+            exibirLista(nomes)
+  
     </script>
 </body>
 </html>
