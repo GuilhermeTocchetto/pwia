@@ -71,12 +71,13 @@
             nomes.pop(); //remove no final
             nomes.push(0); // adiciona no final     */
 
+///////////////////////////////////////////////////////////////////
 
             function exibirLista(lista)
             {
             document.write("<hr>")
 
-            lista.forEach(
+            lista.forEach(          //ira declarar as variaveis sem precisar de colocar o VAR e sera como um objeto/variavel especial
                 (valor, indece) => {
                     document.write("<br> indece: "+indece+" valor é :"+ valor+"<br>")
                 }
