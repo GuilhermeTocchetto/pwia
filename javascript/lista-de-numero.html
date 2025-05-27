@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>\lista de número</title>
+</head>
+<body>
+    <script>
+        var num = ["1", "2", "3"]
+
+        //for(i = 0; i<num.length; i++){
+        
+        //se quiser mostrar o vetor do numero da lista, basta trocar o ducument embaixo por esse da frente dele
+
+        function exibirLista(number){
+            
+            number.forEach((numero) => {
+                document.write("<br><li>"+ numero+"<br>") //document.write("<br>"i". "+ numero[i]+"<br>")
+            });
+                    document.write("<hr>")
+        }
+    //}
+            exibirLista(num)
+            document.write("<b>adiçao do numero 4 no final</b><br>")
+            num.push("4")
+            exibirLista(num)
+            document.write("<b>adiçao do numero 0 no inicio</b><br>")
+            num.unshift("0")
+            exibirLista(num)
+            document.write("<b>inverte a ordem</b><br>")
+            num.reverse()
+            exibirLista(num)
+  
+    </script>
+</body>
+</html>
