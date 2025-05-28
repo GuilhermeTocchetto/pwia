@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var numero = []
+            /*    function exibirLista(ordem){
+            ordem.forEach((i,num) => {
+                document.write("<br>"+i+": "+ num)      deu errado, irei tentar com o for normal
+            });
+        }*/
+        function exibirLista(nums){
+            document.write("<hr>")
+            for( var i = 0; i <nums.length;i++){
+            document.write("<br>Indice "+i+" e número : "+ nums[i]+"<br>")
+        }
+    }
+        for( var i = 1; i<=75; i++){
+            numero.push(i) 
+        }
+        exibirLista(numero)
+        for( var i = 1; i<=25;i++){
+            numero.shift(i)
+        }
+        exibirLista(numero)
+
+    </script>
+</body>
+</html>
