@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       var ordem = []
+       
+       function exibirLista(nums){
+      
+        nums.forEach((numero, indece) => {
+            document.write("<br> Ordem Nº"+[indece+1]+" : "+ numero+"<br>")
+        });
+        document.write("<hr>")
+    }
+
+    exibirLista(ordem)
+    ordem.unshift("1")
+    ordem.push("2")
+    ordem.push("3")
+    ordem.push("4")
+    ordem.push("5")
+    exibirLista(ordem)
+    ordem.reverse()
+    exibirLista(ordem)
+
+
+
+
+    </script>
+</body>
+</html>
