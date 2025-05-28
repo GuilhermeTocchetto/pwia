@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    var tarefaSeguir = []
+
+        function listaTarefa(manual){
+
+          document.write("<ol>")
+            
+            manual.forEach((tarefa) => {
+                document.write("<br><li>"+tarefa)
+            });
+
+          document.write("<hr>")
+
+        }
+
+        
+        listaTarefa(tarefaSeguir)
+        tarefaSeguir.push("entre no prompt(win+r), digite cmd")
+        tarefaSeguir.push("digite 'cd desktop'")
+        tarefaSeguir.push("digite 'git clone -link do github/repositorio'")
+        listaTarefa(tarefaSeguir)
+        tarefaSeguir.pop()
+        listaTarefa(tarefaSeguir)
+
+          document.write("</ol>")
+
+
+    </script>
+</body>
+</html>
