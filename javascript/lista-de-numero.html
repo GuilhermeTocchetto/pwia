@@ -8,15 +8,13 @@
 <body>
     <script>
         var num = ["1", "2", "3"]
-
-        //for(i = 0; i<num.length; i++){
         
-        //se quiser mostrar o vetor do numero da lista, basta trocar o ducument embaixo por esse da frente dele
+        
 
         function exibirLista(number){
             
-            number.forEach((numero) => {
-                document.write("<br><li>"+ numero+"<br>") //document.write("<br>"i". "+ numero[i]+"<br>")
+            number.forEach((numero) => { //dentro do parenteses que vai as variaveis, coleque o indece "number.foreach((numero, i)...""
+                document.write("<br><li>"+ numero+"<br>") //document.write("<br>"i" - "+ numero[i]+"<br>")
             });
                     document.write("<hr>")
         }
