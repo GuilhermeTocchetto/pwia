@@ -11,10 +11,9 @@
 
         function listaTarefa(manual){
 
-          document.write("<ol>")
             
-            manual.forEach((tarefa) => {
-                document.write("<br><li>"+tarefa)
+            manual.forEach((tarefa, indece) => {
+                document.write("<br>"+[indece+1]+" : "+tarefa)
             });
 
           document.write("<hr>")
@@ -29,8 +28,6 @@
         listaTarefa(tarefaSeguir)
         tarefaSeguir.pop()
         listaTarefa(tarefaSeguir)
-
-          document.write("</ol>")
 
 
     </script>

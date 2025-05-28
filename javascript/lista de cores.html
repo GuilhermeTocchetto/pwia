@@ -14,8 +14,8 @@
         function exibirLista(cor)
         {
             cor.forEach(
-                (color) => {
-                document.write("<br>"+color+"<br>")
+                (color, indece) => {
+                document.write("<br>"+[indece+1]+" : "+color+"<br>")
             }
         );
 

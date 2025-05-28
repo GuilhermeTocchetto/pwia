@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var nomes = ["JV", "Caetano"]
+        
+        function exibirLista(nome){
+       /* for(var i; i< nomes.length;i++)
+    {
+            document.write("")
+    }   */
+
+        nome.forEach((NOME, indece) => {
+            document.write("<br>"+[indece+1]+" : "+ NOME+"<br>")
+        });
+
+        document.write("<hr>")
+
+}     
+
+        exibirLista(nomes)
+        nomes.unshift("Davi")
+        exibirLista(nomes)
+        nomes.unshift("mark")
+        exibirLista(nomes)
+        nomes.pop()
+        exibirLista(nomes)
+
+    </script>
+</body>
+</html>
