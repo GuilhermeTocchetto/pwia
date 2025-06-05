@@ -1,0 +1,11 @@
+div{}
+
+html, body{
+    background-color: rgba(131, 238, 202, 0.493);
+
+}
+
+.container{
+    display: center;
+    align-items: center;
+}
