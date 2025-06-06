@@ -8,41 +8,31 @@
 </head>
 <body>
     <div>
-    <input onkeydown="ValidarTexto()" type="text" id="numero" name="numero" class="input">
-            <button id="" type="button" onclick="Clicar()" class="button">
+    <input  type="text" id="pokemon" name="numero" class="input">
+            <button id="butao" type="button" onclick="Clicar()" class="button">
                 pesquisar na pokedex
             </button><br>
-    <input type="text" id="nome" name="nome" class="input">
+        <input type="text" id="nome">
     </div>
             <script>
                 function Clicar()
                 {
-                    var input = document.getElementById("button")
-                        var url = "https://pokeapi.co/api/v2/pokemon/" + input.value  //nao sei se precisa do json
-                        fetch(url)
-                        .then(response => response.json())
-                .then(dados => {
-                    
+                    var input = document.getElementById("pokemon")
                     var nome = document.getElementById("nome")
 
+
+                        var url = "https://pokeapi.co/api/v2/pokemon/" + input.value  //nao sei se precisa do json =NAO PRECISA
+                        
+                        fetch(url)
+                        .then(response => response.json())
+                .then((dados) => {
+                    
                     nome.value = dados.name
                 })
 
-                .catch(error => console.error('Erro:', error))
-
+                    console.log("foi porra")
                 } 
-                function validarFormulario() {
-            var cep = document.getElementById('cep')
-            var endereco = document.getElementById('endereco')
-
-
-            if (cep.value == "") {
-                alert('campo não preencido')
-                cep.style.border = '2px solid red'
-                return false;
-            }
-
-        }           
+                           
             </script>
 </body>
 </html>
