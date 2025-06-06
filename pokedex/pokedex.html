@@ -12,13 +12,15 @@
             <button id="butao" type="button" onclick="Clicar()" class="button">
                 pesquisar na pokedex
             </button><br>
-        <input type="text" id="nome">
+        <input type="text" id="nome"><br>
+        <img src="" id="img" alt="">
     </div>
             <script>
                 function Clicar()
                 {
                     var input = document.getElementById("pokemon")
                     var nome = document.getElementById("nome")
+                    var img = document.getElementById("img")
 
 
                         var url = "https://pokeapi.co/api/v2/pokemon/" + input.value  //nao sei se precisa do json =NAO PRECISA
@@ -28,6 +30,8 @@
                 .then((dados) => {
                     
                     nome.value = dados.name
+                    img.src = dados.sprites.other.showdown.front_default
+
                 })
 
                     console.log("foi porra")
