@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Simples</title>
+</head>
+<body>
+    <div>
+        <button onclick="digaOla()">
+            Aperte aqui
+        </button>
+    </div>
+    <div>
+        <input type="text" id="nome" placeholder="Digite seu nome" />
+        <button onclick="cumprimentar()">Cumprimentar</button>
+    </div>
+    <br/>
+    <label for="num1">Número 1:</label>
+    <input type="number" id="num1" />
+    <br/><br/>
+    <label for="num2">Número 2:</label>
+    <input type="number" id="num2" />
+    <br/><br/>
+    <button onclick="multiplicar()">Multiplicar</button>
+    <button onclick="dividir()">Dividir</button>
+
+    <script>
+        function digaOla() {
+            alert("Olá pessoal, tudo bem?")
+        }
+        function cumprimentar() {
+            var nome = document.getElementById("nome").value
+            if (nome) {
+                alert("Olá " + nome)
+            }
+        }
+        function multiplicar() {
+            const n1 = Number(document.getElementById('num1').value)
+            const n2 = Number(document.getElementById('num2').value)
+            if (isNaN(n1) || isNaN(n2)) {
+                alert('Por favor, insira dois números válidos.')
+                return
+            }
+            alert('Produto: ' + (n1 * n2))
+        }
+        function dividir() {
+            const n1 = Number(document.getElementById('num1').value)
+            const n2 = Number(document.getElementById('num2').value)
+            if (isNaN(n1) || isNaN(n2)) {
+                alert('Por favor, insira dois números válidos.')
+                return
+            }
+            if (n2 === 0) {
+                alert('Erro: divisão por zero não é permitida.')
+                return
+            }
+            alert('Produto: ' + (n1 / n2))
+        }
+    </script>
+</body>
+</html>
